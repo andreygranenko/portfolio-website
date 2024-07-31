@@ -1,0 +1,22 @@
+.sep:before {
+    top: 15px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 42%;
+    transition: 0.5s all;
+    background-color: black;
+}
+
+.sep:after {
+    right: 0;
+    top: 15px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 42%;
+    transition: 0.5s all;
+    background-color: black;
+}
