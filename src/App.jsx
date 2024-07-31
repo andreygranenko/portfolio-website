@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero.jsx";
 import Separator from "./components/separator/Separator.jsx";
 import Work from "./components/work/Work.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import Footer from "./components/footer/Footer.jsx";
 export default function App() {
   return (
     <>
@@ -13,6 +14,13 @@ export default function App() {
       <Work/>
       <Separator text={'Contact'}/>
       <Contact/>
+      <hr/>
+      <Footer/>
+      <>
+
+
+
+      </>
     </>
   )
 }

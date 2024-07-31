@@ -4,7 +4,7 @@
     content: "";
     display: block;
     height: 1px;
-    width: 42%;
+    width: 35%;
     transition: 0.5s all;
     background-color: black;
 }
@@ -16,7 +16,7 @@
     content: "";
     display: block;
     height: 1px;
-    width: 42%;
+    width: 35%;
     transition: 0.5s all;
     background-color: black;
 }
