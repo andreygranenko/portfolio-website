@@ -17,7 +17,7 @@ const ModalWork = ({id, title, description, img}) => {
             <button
               type="button"
               className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-              data-modal-hide="default-modal"
+              data-modal-hide={id}
             >
               <svg
                 className="w-3 h-3"
@@ -46,46 +46,56 @@ const ModalWork = ({id, title, description, img}) => {
             <div id="default-carousel" className="relative w-full lg:w-[70%] " data-carousel="slide">
               {/* Carousel wrapper */}
               <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                {/* Item 1 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img
-                    src={img}
-                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..."
-                  />
-                </div>
-                {/* Item 2 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img
-                    src={img}
-                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..."
-                  />
-                </div>
-                {/* Item 3 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img
-                    src={img}
-                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..."
-                  />
-                </div>
-                {/* Item 4 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img
-                    src={img}
-                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..."
-                  />
-                </div>
-                {/* Item 5 */}
-                <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img
-                    src={img}
-                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                    alt="..."
-                  />
-                </div>
+                {/* eslint-disable-next-line react/prop-types */}
+                {img.map((img, index) => (
+                  <div key={index} className="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img
+                      src={img}
+                      className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                      alt="marvel web app screenshot"
+                    />
+                  </div>
+                ))}
+                {/*/!* Item 1 *!/*/}
+                {/*<div className="hidden duration-700 ease-in-out" data-carousel-item>*/}
+                {/*  <img*/}
+                {/*    src={img}*/}
+                {/*    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"*/}
+                {/*    alt="..."*/}
+                {/*  />*/}
+                {/*</div>*/}
+                {/*/!* Item 2 *!/*/}
+                {/*<div className="hidden duration-700 ease-in-out" data-carousel-item>*/}
+                {/*  <img*/}
+                {/*    src={img}*/}
+                {/*    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"*/}
+                {/*    alt="..."*/}
+                {/*  />*/}
+                {/*</div>*/}
+                {/*/!* Item 3 *!/*/}
+                {/*<div className="hidden duration-700 ease-in-out" data-carousel-item>*/}
+                {/*  <img*/}
+                {/*    src={img}*/}
+                {/*    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"*/}
+                {/*    alt="..."*/}
+                {/*  />*/}
+                {/*</div>*/}
+                {/*/!* Item 4 *!/*/}
+                {/*<div className="hidden duration-700 ease-in-out" data-carousel-item>*/}
+                {/*  <img*/}
+                {/*    src={img}*/}
+                {/*    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"*/}
+                {/*    alt="..."*/}
+                {/*  />*/}
+                {/*</div>*/}
+                {/*/!* Item 5 *!/*/}
+                {/*<div className="hidden duration-700 ease-in-out" data-carousel-item>*/}
+                {/*  <img*/}
+                {/*    src={img}*/}
+                {/*    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"*/}
+                {/*    alt="..."*/}
+                {/*  />*/}
+                {/*</div>*/}
               </div>
               {/* Slider indicators */}
               <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
