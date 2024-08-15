@@ -39,7 +39,7 @@ const ModalWork = ({id, title, description, img}) => {
           </div>
           {/* Modal body */}
           <div className="p-4 md:p-5 space-y-4 flex flex-col gap-5 lg:flex-row">
-            <div className={' w-[34%]'}>
+            <div className={'w-full lg:w-[34%]'}>
               <h3 className={'text-lg font-bold'}>Description</h3>
               <p className={''}> {description}</p>
             </div>
