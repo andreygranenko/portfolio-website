@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+import * as flowbite from "flowbite-react/tailwind";
+
+
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    flowbite.content(),
   ],
   theme: {
     colors: {
@@ -15,5 +19,6 @@ export default {
   },
   plugins: [
     require('daisyui'),
+    flowbite.plugin(),
   ],
 }
