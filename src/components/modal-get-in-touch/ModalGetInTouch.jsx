@@ -1,11 +1,11 @@
 
 "use client";
 
-import { Button, Checkbox, Label, Modal, TextInput } from "flowbite-react";
+import {  Modal } from "flowbite-react";
 import { useState } from "react";
 
 export function ModalGetInTouch() {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
   const [email, setEmail] = useState('');
 
   function onCloseModal() {
