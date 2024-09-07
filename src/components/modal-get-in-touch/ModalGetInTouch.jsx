@@ -15,7 +15,7 @@ export function ModalGetInTouch() {
 
   return (
     <>
-      <button className={'btn bg-light-blue text-blue h-2 '} onClick={() => setOpenModal(true)}>Toggle modal</button>
+      <button className={'btn bg-light-blue text-blue h-2 '} onClick={() => setOpenModal(true)}>Get in touch</button>
       <Modal dismissible  position={'center'} show={openModal} size="md" onClose={onCloseModal} popup>
         <Modal.Header>
           <h3 className="text-xl font-semibold p-5 text-gray-900 dark:text-white">
